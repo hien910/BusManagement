@@ -1,6 +1,8 @@
+package entity;
+
 import java.util.Scanner;
 
-public class Person implements InputInfo{
+public class Person implements InputInfo {
     private String Name;
     private String address;
     private String phone;
@@ -31,7 +33,7 @@ public class Person implements InputInfo{
 
     @Override
     public String toString() {
-        return "Person{" +
+        return "entity.Person{" +
                 "Name='" + Name + '\'' +
                 ", address='" + address + '\'' +
                 ", phone='" + phone + '\'' +

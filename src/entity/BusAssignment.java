@@ -1,3 +1,5 @@
+package entity;
+
 public class BusAssignment {
     private Buses buses;
     private int turn;
@@ -5,8 +7,8 @@ public class BusAssignment {
     public BusAssignment() {
     }
 
-    public BusAssignment(Buses buses1, int turn) {
-        this.buses= buses1;
+    public BusAssignment(Buses buses, int turn) {
+        this.buses= buses;
         this.turn =turn;
     }
 
@@ -28,7 +30,7 @@ public class BusAssignment {
 
     @Override
     public String toString() {
-        return "BusAssignment{" +
+        return "entity.BusAssignment{" +
                 "buses=" + buses +
                 ", turn=" + turn +
                 '}';

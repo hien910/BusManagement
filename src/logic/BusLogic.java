@@ -1,3 +1,7 @@
+package logic;
+
+import entity.Buses;
+
 import java.util.Scanner;
 
 public class BusLogic {

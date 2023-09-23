@@ -1,3 +1,10 @@
+package logic;
+
+import entity.Assignment;
+import entity.BusAssignment;
+import entity.Buses;
+import entity.Driver;
+
 import java.util.Scanner;
 
 public class AssignmentLogic {
@@ -153,7 +160,5 @@ public class AssignmentLogic {
             }
         }
         showAssignment();
-
-
     }
 }

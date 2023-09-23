@@ -1,3 +1,8 @@
+package entity;
+
+import constant.Level;
+import entity.Person;
+
 import java.util.Scanner;
 
 public class Driver extends Person {
@@ -12,7 +17,7 @@ public class Driver extends Person {
 
     @Override
     public String toString() {
-        return "Driver{" +
+        return "entity.Driver{" +
                 " id=" + id +
                 " Name='" + super.getName() + '\'' +
                 ", address='" + super.getAddress() + '\'' +
@@ -57,12 +62,12 @@ public class Driver extends Person {
 //        this.setPhone(new Scanner(System.in).nextLine());
         super.inputInfo();
         System.out.println("Nhập level, chọn 1 trong các level sau:");
-        System.out.println("1. Level A");
-        System.out.println("2. Level B");
-        System.out.println("3. Level C");
-        System.out.println("4. Level D");
-        System.out.println("5. Level E");
-        System.out.println("6. Level F");
+        System.out.println("1. constant.Level A");
+        System.out.println("2. constant.Level B");
+        System.out.println("3. constant.Level C");
+        System.out.println("4. constant.Level D");
+        System.out.println("5. constant.Level E");
+        System.out.println("6. constant.Level F");
         int a;
         do {
             a = new Scanner(System.in).nextInt();

@@ -1,3 +1,7 @@
+package logic;
+
+import entity.Driver;
+
 import java.util.Scanner;
 
 public class DriverLogic {

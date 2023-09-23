@@ -1,3 +1,7 @@
+package entity;
+
+import entity.Driver;
+
 import java.util.Arrays;
 
 public class Assignment {
@@ -20,7 +24,7 @@ public class Assignment {
 
     @Override
     public String toString() {
-        return "Assignment{" +
+        return "entity.Assignment{" +
                 "driver=" + driver +
                 ", busAssignment=" + Arrays.toString(busAssignment) +
                 '}';

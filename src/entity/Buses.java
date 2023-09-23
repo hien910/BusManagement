@@ -1,3 +1,7 @@
+package entity;
+
+import entity.InputInfo;
+
 import java.util.Scanner;
 
 public class Buses implements InputInfo {
@@ -37,7 +41,7 @@ public class Buses implements InputInfo {
 
     @Override
     public String toString() {
-        return "Buses{" +
+        return "entity.Buses{" +
                 "id=" + id +
                 ", distance='" + distance + '\'' +
                 ", numBusStop=" + numBusStop +
