@@ -44,6 +44,14 @@ public class DriverLogic {
         }
         return null;
     }
+    public boolean isEmptyDriver(){
+        for (int i = 0; i < drivers.length; i++) {
+            if (drivers[i]!=null){
+                return false;
+            }
+        }
+        return true;
+    }
 
 
 }

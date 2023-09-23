@@ -22,21 +22,47 @@ public class Main {
                     assignmentLogic.showAssignment();
                     break;
                 case 4:
-
+                    showSortMenu();
                     break;
                 case 5:
-
+                    assignmentLogic.sortByTotal();
                     break;
                 case 6:
-
                     break;
                 case 7:
-
                     return;
             }
         }
 
     }
+
+    private static void showSortMenu() {
+        System.out.println("Sắp xếp danh tài xế được phân công:");
+        System.out.println("1. Theo tên tài xế");
+        System.out.println("2. Theo tổng số lượt giảm dần");
+        System.out.println("3. Quit");
+        int functionChoice;
+        do {
+            functionChoice = new Scanner(System.in).nextInt();
+            if (functionChoice >= 1 && functionChoice <= 3) {
+                break;
+            }
+            System.out.println("Chức năng không hợp lệ, vui long chọn lại");
+        } while (true);
+        switch (functionChoice){
+            case 1:
+                assignmentLogic.sortByDriverName();
+                break;
+            case 2:
+                assignmentLogic.sortByTotal();
+                break;
+            case 3:
+                break;
+        }
+
+
+    }
+
     private static int chooseFunction() {
         System.out.println("Xin mời lựa chọn chức năng: ");
         int functionChoice;
@@ -61,5 +87,6 @@ public class Main {
         System.out.println("7. Thoát!");
 
     }
+    
 
 }

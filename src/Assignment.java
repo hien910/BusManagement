@@ -3,13 +3,19 @@ import java.util.Arrays;
 public class Assignment {
     private Driver driver;
     private BusAssignment[] busAssignment;
+    private int totalTurn;
 
     public Assignment() {
     }
 
-    public Assignment(Driver driver, BusAssignment[] busAssignment) {
+    public int getTotalTurn() {
+        return totalTurn;
+    }
+
+    public Assignment(Driver driver, BusAssignment[] busAssignment, int totalTurn) {
         this.driver=driver;
         this.busAssignment= busAssignment;
+        this.totalTurn= totalTurn;
     }
 
     @Override

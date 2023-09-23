@@ -47,4 +47,12 @@ public class BusLogic {
         return null;
     }
 
+    public boolean isEmptyBus() {
+        for (int i = 0; i < buses.length; i++) {
+            if (buses[i]!=null){
+                return false;
+            }
+        }
+        return true;
+    }
 }
